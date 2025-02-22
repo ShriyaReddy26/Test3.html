@@ -57,26 +57,6 @@ nav {
     width: 80%;  
 }
 
-/* Question 5 */
-.gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 10px; 
-            width: 80%;
-            height: 100px;
-            margin: auto;
-}
-.gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-@media (max-width: 600px) {
-            .gallery {
-                grid-template-columns: 1fr; 
-            }
-        }
-
   /* Question 6 */
     button {
             background-color: blue;
@@ -90,6 +70,23 @@ nav {
         
         button:hover {
             background-color: darkblue;
+        }
+
+        /* Question 7 */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+            animation: slide 3s infinite;
+        }
+        @keyframes slide {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 300px;
+            }
         }
     </style>
 
@@ -118,16 +115,11 @@ nav {
         <a href="#">Contact</a>
     </nav>
 
-      <!-- Question 5 -->
-      <div class="gallery">
-        <img src="https://images.pexels.com/photos/30625568/pexels-photo-30625568/free-photo-of-serene-winter-landscape-in-government-camp.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"  alt="Image 1">
-        <img src="https://images.pexels.com/photos/30419165/pexels-photo-30419165/free-photo-of-colorful-copenhagen-architecture-street-scene.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 2">
-        <img src="https://images.pexels.com/photos/30739091/pexels-photo-30739091/free-photo-of-elegant-red-velvet-cake-and-roses-on-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
-        <img src="https://images.pexels.com/photos/2227127/pexels-photo-2227127.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 4">
-    </div>
-
     <!-- Question 6 -->
      <button>Click Me</button>
+
+     <!-- Question 7 -->
+     <div class="box"></div>
 </body>
 </html>
 
