@@ -46,9 +46,36 @@ p{
     padding: 20px;
     margin: 10px;
     max-width: 300px;
-    
-    
 }
+
+/* <!-- Question 4 --> */
+ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;  
+}
+
+/* Question 5 */
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px; 
+            width: 80%;
+            height: 100px;
+            margin: auto;
+}
+.gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+@media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr; 
+            }
+        }
     </style>
 
 </head>
@@ -68,6 +95,23 @@ p{
 
      <!-- Question 3 -->
       <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, perferendis? Laborum, modi ut itaque velit expedita soluta est repellendus quia et nobis, a accusantium. Expedita dignissimos sint facilis itaque reiciendis?</div>
+
+      <!-- Question 4 -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+      <!-- Question 5 -->
+      <div class="gallery">
+        <img src="https://images.pexels.com/photos/30625568/pexels-photo-30625568/free-photo-of-serene-winter-landscape-in-government-camp.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"  alt="Image 1">
+        <img src="https://images.pexels.com/photos/30419165/pexels-photo-30419165/free-photo-of-colorful-copenhagen-architecture-street-scene.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 2">
+        <img src="https://images.pexels.com/photos/30739091/pexels-photo-30739091/free-photo-of-elegant-red-velvet-cake-and-roses-on-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3">
+        <img src="https://images.pexels.com/photos/2227127/pexels-photo-2227127.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 4">
+    </div>
+
+
 </body>
 </html>
 
